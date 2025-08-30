@@ -1,0 +1,55 @@
+{
+  "name": "google_cloud_api",
+  "version": "1.0.0",
+  "description": "Cloud Run and Google APIs",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "start:mcp": "smithery run firestore-mcp",
+    "mcp": "npx @smithery/cli run firestore-mcp",
+    "test": "mocha \"**/*.test.js\""
+  },
+  "dependencies": {
+    "@google-cloud/documentai": "^9.3.0",
+    "@google-cloud/storage": "^7.16.0",
+    "@google/genai": "^1.11.0",
+    "@google/generative-ai": "^0.24.1",
+    "@modelcontextprotocol/sdk": "^1.17.2",
+    "@sinonjs/referee-sinon": "^12.0.0",
+    "@smithery/cli": "^1.2.17",
+    "@smithery/sdk": "^1.5.5",
+    "@smithy/core": "^3.8.0",
+    "axios": "^1.10.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^4.21.2",
+    "highlight.js": "^11.11.1",
+    "jsverify": "^0.8.4",
+    "knuth-shuffle": "^1.0.8",
+    "langchain": "^0.3.30",
+    "marked": "^16.1.2",
+    "newrelic": "^13.0.0",
+    "nodemon": "^3.1.10",
+    "openai": "^5.16.0",
+    "react-router-dom": "^7.7.1",
+    "sanitize-html": "^2.17.0",
+    "sinon": "^21.0.0",
+    "uuid": "^11.1.0"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "keywords": [
+    "GCP"
+  ],
+  "author": "shubham_seth",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.2.1",
+    "mocha": "^11.7.1",
+    "supertest": "^7.1.3"
+  }
+}
