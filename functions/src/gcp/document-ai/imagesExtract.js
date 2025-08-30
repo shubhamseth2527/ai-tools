@@ -6,6 +6,19 @@ import os from 'os';
 import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const json = {
+  "type": "service_account",
+  "project_id": "",
+  "private_key_id": "",
+  "private_key": "",
+  "client_email": "",
+  "client_id": "",
+  "auth_uri": "",
+  "token_uri": "",
+  "auth_provider_x509_cert_url": "",
+  "client_x509_cert_url": "",
+  "universe_domain": ""
+}
 const keyPath = path.join(__dirname, '..', '..', 'sa', 'sa-keys.json');
 import {
     BUCKET_NAME,
@@ -20,7 +33,7 @@ import { v4 as uuidv4 } from 'uuid';
 const docAIClient = new DocumentProcessorServiceClient()
 const storage = new Storage();
 
-process.env.GOOGLE_APPLICATION_CREDENTIALS = keyPath;
+process.env.GOOGLE_APPLICATION_CREDENTIALS = json;
 
 
 
