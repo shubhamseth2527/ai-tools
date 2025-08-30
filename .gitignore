@@ -93,3 +93,5 @@ node_modules/
 *.tmp
 *.swp
 *.bak
+
+newrelic.js
